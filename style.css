@@ -1,0 +1,459 @@
+/* General Styles */
+
+body {
+	font-family: "Merienda One", Tahoma, Arial, sans-serif;
+	margin-top: 0.5rem;
+    background-color: #ebe7e7;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.vertical-align {
+    align-items: center;
+}
+
+.main-div {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .main-div {
+    width: auto;
+    margin: 0 10px;
+   }
+}
+
+/* Header, Nav and Footer Styles */
+
+header {
+    padding-top: 1rem;
+}
+
+nav {
+    top: 0;
+    height: 30px;
+    justify-content: space-around;
+    background-color: #919090;
+    position: sticky;
+    z-index: 3;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+    height: 23px;
+   }
+}
+
+nav > a {
+    font-weight: bold;
+    text-transform: uppercase;
+    align-content: space-around;
+    height: 2rem;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    nav > a {
+    font-size: 12px;
+    height: 23px;
+   }
+}
+
+nav > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+	background-color: #919090;
+    padding-top: 0.5rem;
+	padding-bottom: 1rem;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+	z-index: 3;
+}
+
+footer a {
+    height: 2rem;
+    color: black;
+    font-size: large;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    footer {
+        width: 100%;
+        padding: 0 0 5px 0;
+    }
+}
+
+footer > span {
+    font-size: medium;
+}
+
+footer > p {
+    font-size: small;
+    margin-top: 8px;
+}
+
+@media (max-width: 800px) {
+    footer > p {
+        font-size: smaller;
+        margin: 0%;
+    }
+}
+
+footer > a {
+    font-size: medium;
+}
+
+@media (max-width: 800px) {
+    footer > a {
+        font-size: small;
+    }
+}
+
+/* Heading Styles */
+
+h1 {
+    font-size: 4em;
+    background-color: transparent;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+    font-size: 50px;
+    text-wrap: nowrap;
+   }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+    font-size: 30px;
+    text-wrap: nowrap;
+   }
+}
+
+h2 {
+    font-size: 2em;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+header h2 {
+    font-size: 2.2em;
+    margin: 0 0 20px 0;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+    header h2 {
+    font-size: 17px;
+    text-wrap: nowrap;
+   }
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 0 auto 0;
+    scroll-margin-top: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+    h3 {
+    font-size: 20px;
+    text-wrap: nowrap;
+   }
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 22px;
+    margin: 0 0;
+    scroll-margin-top: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+    h4 {
+    font-size: 19px;
+    text-wrap: nowrap;
+   }
+}
+
+.wrap-h4 {
+    padding: 10px;
+    width: 100%;
+    text-wrap: wrap;
+}
+
+#h4-bands-nav {
+    margin-top: 52px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+h5 {
+    text-emphasis: none;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    scroll-margin-top: 3rem;
+}
+
+/* Div, Span, Section and Article Styles */
+
+.div-center {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.centered-span {
+    display: table;
+    margin: 0 auto;
+}
+
+.div-quarter-left {
+    width: 25%;
+    height: 80vh;
+    border-radius: 8px;
+    margin: 1.5rem 0 0 0;
+    padding-top: 8px;
+    float: left;
+    overflow: scroll;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    position: sticky;
+    top: 2rem;
+}
+
+@media (max-width: 800px) {
+    .split-page-div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 800px) {
+    .div-quarter-left {
+        width: auto;
+    }
+}
+
+.div-3quarters-right {
+    margin-left: 25%;
+    height: 100vh;
+    margin: 1.5rem 0.5rem 62px 0.5rem;
+    padding-left: 26px;
+    padding-top: 2rem;
+    margin-bottom: 62px;
+    height: auto;
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    .div-3quarters-right {
+        margin: 2rem 0 0 0;
+        padding: 0 10px;
+    }
+}
+
+#home-main-div {
+    height: auto;
+    margin-bottom: 54px;
+    background-image: url(images/check2.png);
+    background-repeat: repeat;
+    justify-content: center;
+}
+
+#home-span {
+    height: fit-content;
+    width: 75%;
+    margin-top: 3.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #ebe7e7;
+    box-shadow: 0 0 20px 10px;
+    padding: 2rem;
+}
+
+@media (max-width: 800px) {
+    #home-span {
+        width: 60%;
+    }
+}
+
+#form-div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#signup-form {
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Blur edges of div/span */
+
+.blur-box {
+    background-color: #ebe7e7;
+    box-shadow: 0 0 10px 10px #ebe7e7;
+}
+
+/* Set gap between rows/columns */
+
+.gap-20 {
+    gap: 20px;
+}
+
+/* Paragraph Styles */
+
+div > p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+section > p {
+    font-size: 15px;
+    text-wrap: balance;
+}
+
+article > p {
+    font-size: medium;
+    text-align: justify;
+}
+
+@media (max-width: 800px) {
+    span > p {
+        font-size: small;
+    }
+}
+
+/* Anchor Styles */
+
+p a {
+    color: rgb(39, 39, 198);
+    text-decoration: none;
+    font-size: inherit;
+}
+
+p > a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(39, 39, 198);
+}
+
+ul a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Image and Video Styles */
+
+header img {
+    border: none;
+    width: 13%;
+    height: auto;
+    justify-self: left;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+.video-style {
+    width: 100%;
+}
+
+.video-div {
+    width: 27%;
+    float: right;
+    margin: 10px 0px 0px 20px;
+}
+
+.video-info {
+    padding: 0%;
+    margin-top: 5px;
+}
+
+figure {
+    margin: 15px 26px 5px 10px;
+}
+
+/* List Styles */
+
+ul {
+    list-style-type: none;
+}
+
+.padded-li {
+    padding: 1rem 0 0 2rem;
+}
+
+/* Hr Styles */
+
+hr {
+    border-color: #eeebeb;
+}
+
+.clipped-hr {
+    width: 90%;
+    margin-left: 0;
+}
+
+#history-hr {
+    width: 90%;
+    margin-left: 8px;
+    margin-top: 52px;
+}
+
+.home-hr {
+    border: 1px solid black;
+    box-shadow:4px 3px 3px #767272;
+}
+
+/* Input Styles */
+
+input[type=text],
+input[type=email] {
+    height: 30px;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: inherit;
+}
+
+fieldset {
+	border: 1px solid black;
+	margin-top: 20px;
+    padding-bottom: 20px;
+}
